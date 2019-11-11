@@ -167,13 +167,8 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
     ```
     <Input styles={{ size: "small" }} placeholder="Test" onChange={(event) => console.log(event.target.value)} />
      ```
-<<<<<<< HEAD
-# Colors
- 
-=======
 # Colors Pre-defined
 
->>>>>>> Update README.md and helpers.js
     primary: '#007bff'
     secondary: '#6c757d'
     success: '#28a745'
@@ -190,8 +185,5 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
     small: '8px'
     default: '16px'
     large: '24px'
-<<<<<<< HEAD
-=======
 
     * Note: Other custom sizes (px, em, %) are allowed
->>>>>>> Update README.md and helpers.js
