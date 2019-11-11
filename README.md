@@ -72,12 +72,11 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
     const App = () => (
         <ThemeProvider theme={theme}>
             <div>
-                <h4>{theme.size} buttons</h4>
-                <Input styles={{ size: "small" }} placeholder="Test" type="file" onChange={(event) => console.log(event.target.value)} />
-                <Button styles={{ color: "white", backgroundColor: "primary", size: "large" }} onClick={() => alert(`primary ${theme.size} clicked`)}>
+                <h4>Buttons with {theme.size} size</h4>
+                <Button styles={{ color: "white", backgroundColor: "primary" }} onClick={() => alert(`primary ${theme.size} clicked`)}>
                     Click for primary {theme.size}
                 </Button>
-                <Button styles={{ color: "white", backgroundColor: "secondary" }} onClick={() => alert(`secondary ${theme.size} clicked`)}>
+                <Button styles={{ color: "hsl(47, 92%, 60%)", backgroundColor: "secondary" }} onClick={() => alert(`secondary ${theme.size} clicked`)}>
                     Click for secondary {theme.size}
                 </Button>
                 <Button styles={{ color: "white", backgroundColor: "success" }} onClick={() => alert(`success ${theme.size} clicked`)}>
@@ -95,8 +94,48 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
                 <Button styles={{ color: "white", backgroundColor: "dark" }} onClick={() => alert(`dark ${theme.size} clicked`)}>
                     Click for dark {theme.size}
                 </Button>
-                <Button styles={{ color: "white", backgroundColor: "primary" }} loading={{ color: "pink" }} onClick={() => alert(`dark ${theme.size} clicked`)}>
+            </div>
+            <div>
+                <h4>Inverse Buttons with {theme.size} size</h4>
+                <Button styles={{ color: "white", backgroundColor: "primary", inverse: true }} onClick={() => alert(`primary ${theme.size} clicked`)}>
+                    Click for primary {theme.size}
                 </Button>
+                <Button styles={{ color: "hsl(47, 92%, 60%)", backgroundColor: "secondary", inverse: true }} onClick={() => alert(`secondary ${theme.size} clicked`)}>
+                    Click for secondary {theme.size}
+                </Button>
+                <Button styles={{ color: "white", backgroundColor: "success", inverse: true }} onClick={() => alert(`success ${theme.size} clicked`)}>
+                    Click for success {theme.size}
+                </Button>
+                <Button styles={{ color: "white", backgroundColor: "danger", inverse: true }} onClick={() => alert(`danger ${theme.size} clicked`)}>
+                    Click for danger {theme.size}
+                </Button>
+                <Button styles={{ color: "white", backgroundColor: "warning", inverse: true }} onClick={() => alert(`warning ${theme.size} clicked`)}>
+                    Click for warning {theme.size}
+                </Button>
+                <Button styles={{ color: "white", backgroundColor: "info", inverse: true }} onClick={() => alert(`info ${theme.size} clicked`)}>
+                    Click for info {theme.size}
+                </Button>
+                <Button styles={{ color: "white", backgroundColor: "dark", inverse: true }} onClick={() => alert(`dark ${theme.size} clicked`)}>
+                    Click for dark {theme.size}
+                </Button>
+            </div>
+            <div>
+                <h4>Loading Button with {theme.size} size</h4>
+                <Button styles={{ color: "white", backgroundColor: "primary" }} loading={{ color: "lime" }} onClick={() => alert(`dark ${theme.size} clicked`)}>
+                </Button>
+            </div>
+            <h4>Inputs with {theme.size} size</h4>
+            <div style={{ display: "flex", alignItems: "center" }}>
+                <span>Input Text</span>
+                <Input styles={{ size: "small" }} placeholder="Input Text" type="text" onChange={(event) => console.log(event.target.value)} />
+                <span>Input Text-area</span>
+                <Input styles={{ size: "small" }} placeholder="Input Text-area" type="textarea" onChange={(event) => console.log(event.target.value)} />
+                <span>Input Date</span>
+                <Input styles={{ size: "small" }} placeholder="Input Date" type="date" onChange={(event) => console.log(event.target.value)} />
+                <span>Input Password</span>
+                <Input styles={{ size: "small" }} placeholder="Input Password" type="password" onChange={(event) => console.log(event.target.value)} />
+                <span>Input Email</span>
+                <Input styles={{ size: "small" }} placeholder="Input Email" type="email" onChange={(event) => console.log(event.target.value)} />
             </div>
         </ThemeProvider>
     );
