@@ -1,14 +1,18 @@
 {
   "name": "iunigo-module",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Module with Button and Input Text styled components",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baru79/iunigo-module"
+  },
+  "author": "Martin Barutta",
+  "license": "MIT",
   "files": [
     "dist/*"
   ],
