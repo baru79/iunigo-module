@@ -6,6 +6,8 @@
 
 In this tutorial, I'll show you how to use Button and Input Text styled components.
 
+![Iunigo Module](demo/demo.gif)
+
 # Tutorial
 
 ## Prerequisites
