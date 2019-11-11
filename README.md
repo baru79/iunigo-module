@@ -103,9 +103,6 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
 
     export default App;
     ```
-    
-    * This will make it so the `gh-pages` package knows where you want it to deploy your app in step 7.
-    * It will also make it so git knows where you want it to push your source code (i.e. the commits on your `master` branch) in step 8.
 
 5. **Build and Start your app.** (2 minutes)
 
@@ -130,7 +127,7 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
      ## Props
 
     ```
-    styles={{ color: "white", backgroundColor: "secondary", size: "small" }}
+    styles={{ color: "white", backgroundColor: "secondary", size: "small", inverse: true }}
     disabled
     loading={{ color: "pink" }}
     ```
@@ -170,7 +167,7 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
     ```
     <Input styles={{ size: "small" }} placeholder="Test" onChange={(event) => console.log(event.target.value)} />
      ```
-# Colors
+# Colors Pre-defined
 
     primary: '#007bff'
     secondary: '#6c757d'
@@ -181,8 +178,12 @@ In this tutorial, I'll show you how to use Button and Input Text styled componen
     dark: '#343a40'
     default: 'black'
 
+    * Note: Other custom colors (hex, hsl, rgb) are allowed
+
 # Sizes
 
     small: '8px'
     default: '16px'
     large: '24px'
+
+    * Note: Other custom sizes (px, em, %) are allowed
