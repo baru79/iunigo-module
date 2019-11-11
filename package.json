@@ -1,6 +1,6 @@
 {
   "name": "iunigo-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Module with Button and Input Text styled components",
   "main": "dist/index.js",
   "scripts": {
