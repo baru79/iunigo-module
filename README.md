@@ -4,9 +4,7 @@
 
 # Introduction
 
-In this tutorial, I'll show you how I deployed a React app—which I created using `create-react-app`—to GitHub Pages.
-
-The remainder of this document contains a tutorial on creating a Module with Button and Input Text styled components (using `create-react-app`).
+In this tutorial, I'll show you how to use Button and Input Text styled components.
 
 # Tutorial
 
@@ -173,7 +171,7 @@ The remainder of this document contains a tutorial on creating a Module with But
     <Input styles={{ size: "small" }} placeholder="Test" onChange={(event) => console.log(event.target.value)} />
      ```
 # Colors
-    ```
+ 
     primary: '#007bff'
     secondary: '#6c757d'
     success: '#28a745'
@@ -182,10 +180,9 @@ The remainder of this document contains a tutorial on creating a Module with But
     info: '#17a2b8'
     dark: '#343a40'
     default: 'black'
-    ```
+
 # Sizes
-    ```
+
     small: '8px'
     default: '16px'
     large: '24px'
-    ```
